@@ -15,12 +15,12 @@ import { Produits } from './entities/produit.entity';
 
 @Injectable()
 export class ProduitsService {
-  create(createProduitDto: CreateProduitDto) {
+  async create(createProduitDto: CreateProduitDto) {
     const newProduits = new Produits();
     newProduits.nom = createProduitDto.nom;
     newProduits.prix = createProduitDto.prix;
     newProduits.quantite = createProduitDto.quantite;
-    newProduits.save();
+    await newProduits.save();
     return newProduits;
   }
 

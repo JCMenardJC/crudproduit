@@ -55,8 +55,8 @@ export class ProduitsController {
   }
 
   @Get()
-  findAll() {
-    return this.produitsService.findAll();
+  async findAll() {
+    return await this.produitsService.findAll();
   }
 
   @Post()
