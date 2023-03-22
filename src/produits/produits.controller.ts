@@ -16,12 +16,13 @@ import { UpdateProduitDto } from './dto/update-produit.dto';
 import { Produits } from './entities/produit.entity';
 
 /**
- * Class permettant le contrôle des données entrantes et la gestion des erreurs pour les requêtes "Users"
- * * **.create()** : Conditions préalables à l'ajout d'une nouvelle "Compétence"
- * * **.findAll()** : Conditions préalables à la récupération de toutes les "Compétences"
- * * **.findOne()** : Conditions préalables à la consultation d'une "Compétence" d'un utilisateur par son Token
- * * **.update()** : Conditions préalables à la modification d'une Compétence
- * * **.remove()**: Conditions préalables à la suppression d'une "Compétences" par un user
+ * Class permettant le contrôle des données entrantes et la gestion des erreurs pour les requêtes "Admin"
+ * * **.create()** : Conditions préalables à l'ajout d'un nouveau "produit"
+ * * **.findAll()** : Conditions préalables à la récupération de touts les "produits"
+ * * **.findOneByNom()** : Conditions préalables à la consultation d'un "produit" par son nom
+ * * **.findOne()** : Conditions préalables à la consultation d'un "produit" par son id
+ * * **.update()** : Conditions préalables à la modification d'un "produit"
+ * * **.remove()**: Conditions préalables à la suppression d'un "produit"
  */
 
 @Controller('produits')
